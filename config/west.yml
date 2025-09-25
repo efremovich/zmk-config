@@ -1,0 +1,32 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: krikun98
+      url-base: https://github.com/krikun98
+    - name: ergonautkb
+      url-base: https://github.com/ergonautkb
+    - name: efremovich
+      url-base: https://github.com/efremovich
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: skean-zmk-module
+      remote: krikun98
+      revision: main
+    - name: jorian840-zmk-module
+      remote: krikun98
+      revision: main
+    - name: ergonautkb-zmk-module
+      remote: ergonautkb
+      revision: main
+    - name: tbk-mini-zmk-module
+      remote: krikun98
+      revision: main
+    - name: ilich-zmk-module
+      remote: efremovich
+      revision: main
+  self:
+    path: config
